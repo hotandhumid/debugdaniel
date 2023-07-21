@@ -1,0 +1,260 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v3.2.43",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0,
+                1
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Glasses",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.8375324010848999,
+                0.8375324010848999,
+                0.8375324010848999
+            ],
+            "translation" : [
+                -0.001043274998664856,
+                1.6991785764694214,
+                0.6028285622596741
+            ]
+        },
+        {
+            "mesh" : 1,
+            "name" : "FBHead",
+            "translation" : [
+                0.0038149086758494377,
+                1.5366309881210327,
+                -0.005810234230011702
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "oculos",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.525658369064331
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "FBHead_preview_mat",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Glasses",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                }
+            ]
+        },
+        {
+            "name" : "FBHead_mesh",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6,
+                        "COLOR_0" : 7
+                    },
+                    "indices" : 8,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "glasses",
+            "uri" : "glasses.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "FBHead_baked_tex",
+            "uri" : "FBHead_baked_tex.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 1862,
+            "max" : [
+                0.7782109975814819,
+                0.48687300086021423,
+                0.24887000024318695
+            ],
+            "min" : [
+                -0.7687879800796509,
+                -0.8681039810180664,
+                -0.25847500562667847
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 1862,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 1862,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 8856,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 18097,
+            "max" : [
+                0.7188149094581604,
+                0.9966609477996826,
+                1.1188068389892578
+            ],
+            "min" : [
+                -0.7220143675804138,
+                -1.368646502494812,
+                -0.7493593096733093
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 18097,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 18097,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 18097,
+            "normalized" : true,
+            "type" : "VEC4"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5123,
+            "count" : 107862,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 22344,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 22344,
+            "byteOffset" : 22344
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 14896,
+            "byteOffset" : 44688
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 17712,
+            "byteOffset" : 59584
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 217164,
+            "byteOffset" : 77296
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 217164,
+            "byteOffset" : 294460
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 144776,
+            "byteOffset" : 511624
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 144776,
+            "byteOffset" : 656400
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 215724,
+            "byteOffset" : 801176
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 1016900,
+            "uri" : "my_face_no_stars.bin"
+        }
+    ]
+}

@@ -1,0 +1,148 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="{% static '/images/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static '/css/cpp_background.css' %}" />
+    <meta
+      name="keywords"
+      content="debugdaniel, daniel li, daniel, li%, li percent, debug daniel, blog debug daniel, blogdebugdaniel"
+    />
+    <meta name="author" content="Daniel Li" />
+    <meta
+      name="google-site-verification"
+      content="jWVtP8DChgYl9L7X6HiJ5DQqHsUY7T1a9X1GGyaNSQg"
+    />
+    <title>C++ Projects</title>
+  </head>
+
+  <body>
+    <div class="navbar-page">
+      <p style="margin: 0; font-size: 16px; color: white">
+        <a href="/about_me" class="my_img" style="margin: 0; padding: 0">
+          <img
+            class="me_img"
+            src="{% static '../static/images/logo.png' %}"
+            alt="me logo"
+          />
+        </a>
+      </p>
+      <a href="/main">
+        <p class="animate-navbar" style="margin: 0; font-size: 16px">Home</p>
+      </a>
+      <a href="/skill_page">
+        <p class="animate-navbar" style="margin: 0; font-size: 16px">Skills</p>
+      </a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <p class="animate-navbar" style="font-size: 16px; margin: 0">
+            Projects <i class="fa fa-caret-down"></i>
+          </p>
+        </button>
+        <div class="dropdown-content">
+          <a href="/skills/python_projects">
+            <p class="animate-navbar" style="margin: 0; font-size: 16px">
+              Python
+            </p>
+          </a>
+          <a href="/skills/html_projects">
+            <p class="animate-navbar" style="margin: 0; font-size: 16px">
+              HTML/CSS/JS
+            </p>
+          </a>
+          <a
+            href="/skills/cpp_projects"
+            style="background-color: rgba(63, 63, 63, 0.899)"
+          >
+            <p class="animate-navbar" style="margin: 0; font-size: 16px">
+              C++
+            </p>
+          </a>
+        </div>
+      </div>
+      <a href="/about_me">
+        <p class="animate-navbar" style="margin: 0; font-size: 16px">
+          About Me
+        </p>
+      </a>
+    </div>
+    <br />
+    <h1 class="title animate-charcter" style="text-align: center">
+      C++ Projects
+    </h1>
+    <div class="row justify-content-center">
+      <!-- RECT 1 -->
+<!-- 
+      <a
+        id="rect-space1"
+        class="col-sm-2 rect geeks background-1"
+        style="text-decoration: none"
+      >
+        <div class="ribbon ribbon-top-left">
+          <span><p class="animate-banner">first project</p></span>
+        </div>
+        <br />
+        <p class="rect-title">Test</p>
+        <div class="link-bar"></div>
+      </a>
+
+      <div class="collapse-rect">
+        <div class="collapse-bar">
+          <p class="collapse-title">Test</p>
+          <a class="collapse-btn">Collapse</a>
+        </div>
+        <div class="content-box">
+          <big>Overview</big>
+          <p class="content-p">Test</p>
+          <big>Time Spent</big>
+          <p class="content-p">Test</p>
+        </div>
+      </div> -->
+
+      <script>
+        allBoxes = document.querySelectorAll(".geeks");
+        allButtons = document.querySelectorAll(".collapse-btn");
+
+        allBoxes.forEach((box) => {
+          box.addEventListener("click", () => {
+            box.nextSibling.nextSibling.classList.toggle("display");
+            allBoxes.forEach((hidebox) => {
+              hidebox.classList.toggle("hide");
+            });
+          });
+        });
+
+        allButtons.forEach((box) => {
+          box.addEventListener("click", () => {
+            box.parentElement.parentElement.classList.toggle("display");
+            allBoxes.forEach((showbox) => {
+              showbox.classList.toggle("hide");
+            });
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>
